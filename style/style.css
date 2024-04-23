@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Oswald:wght@600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+}
+body header .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 3rem 4rem;
+}
+body header .navbar .menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header .navbar .menu li {
+  cursor: pointer;
+}
+body header .navbar .menu li span {
+  font-family: t;
+}
+body section {
+  padding: 3rem;
+}
+body .section-1 .container {
+  max-width: 900px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-top: 4rem;
+  padding: 2rem;
+  position: relative;
+}
+body .section-1 .container .img {
+  background-image: url(/images/bg001.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 90%;
+  box-shadow: rgba(14, 13, 13, 0.5) 5px 20px 15px;
+}
+body .section-1 .container .img-bg1 {
+  -webkit-clip-path: circle(39% at 50% 50%);
+          clip-path: circle(39% at 50% 50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .section-1 .container .img-bg1 .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 4rem;
+}
+body .section-1 .container .img-bg1 .content .title {
+  margin-left: 6rem;
+}
+body .section-1 .container .img-bg1 .content .hole {
+  width: 40px;
+  height: 40px;
+  background-color: #222;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .section-1 .container .img-bg1 .content .social-media {
+  margin-right: 6rem;
+}
+body .section-1 .container .img-bg1 svg {
+  position: absolute;
+  top: 0;
+}
+body .section-2 .text-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 6rem;
+  border-top: 2px solid #fb9319;
+  padding-top: 1rem;
+}
+body .section-2 .text-content .txt-content {
+  height: auto;
+  overflow: hidden;
+}
+body .section-2 .text-content .txt-2 {
+  align-self: flex-end;
+}
+body .section-3 .catogary {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+body .section-3 .catogary h3:first-child {
+  flex: 0.7;
+}
+body .section-3 .catogary h3:nth-child(2) {
+  flex: 1;
+}
+body .section-3 .wrapper .lists {
+  max-width: 1600px;
+  width: 100%;
+}
+body .section-3 .wrapper .lists .list {
+  display: flex;
+  color: rgba(185, 91, 65, 0.4745098039);
+}
+body .section-3 .wrapper .lists .list :nth-child(2) {
+  text-align: center;
+}
+body .section-3 .wrapper .lists .list:hover .list-txt {
+  color: #b95c41;
+}
+body .section-3 .wrapper .lists .list:hover .list-img img {
+  opacity: 1;
+}
+body .section-3 .wrapper .lists .list div {
+  width: 33.33%;
+}
+body .section-3 .wrapper .lists .list .list-txt {
+  padding: 0.5rem 0;
+  font-size: 2rem;
+}
+body .section-3 .wrapper .lists .list .list-img img {
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  right: 100px;
+  opacity: 0;
+  margin-bottom: 1rem;
+}
+body .section-3 .wrapper .lists .list .list-img img.img-active {
+  opacity: 1;
+}
+body .section-3 .wrapper .lists .focus-txt .list-txt {
+  color: #b95c41;
+}
+body .section-4 .text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+body .section-4 .text-wrapper h2 {
+  font-size: 10rem;
+  text-transform: uppercase;
+}
+body .section-4 .text-wrapper :nth-child(1) {
+  width: 65%;
+}
+body .section-4 .text-wrapper :nth-child(2) {
+  width: 35%;
+  text-align: end;
+}
+body .section-4 .text-wrapper .icon {
+  font-size: 8rem;
+  width: 40%;
+  text-align: end;
+  padding-top: 2rem;
+}
+body .section-4 .text-wrapper :nth-child(4) {
+  width: 60%;
+  text-align: end;
+}
+body .section-5 .slider {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5rem 0;
+}
+body .section-5 .slider .carousel .carousel-cell {
+  width: 66%;
+  padding-top: 50%;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  /* cell number */
+}
+body .section-5 .slider .carousel .carousel-cell:before {
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 90%;
+  width: 80%;
+  top: 10%;
+  left: 10%;
+  -webkit-clip-path: circle(30% at 50% 50%);
+          clip-path: circle(30% at 50% 50%);
+}
+body .section-5 .slider .carousel .carousel-cell:after {
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90%;
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: -1;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0 10px 15px;
+}
+body .section-5 .slider .carousel .is-selected.carousel-cell::before {
+  animation: rotation 20s linear infinite 1s;
+}
+body .section-5 .slider .carousel .cell-1::after,
+body .section-5 .slider .carousel .cell-1::before {
+  background-image: url(/images/002.png);
+}
+body .section-5 .slider .carousel .cell-2::after,
+body .section-5 .slider .carousel .cell-2::before {
+  background-image: url(/images/003.png);
+}
+body .section-5 .slider .carousel .cell-3::after,
+body .section-5 .slider .carousel .cell-3::before {
+  background-image: url(/images/005.png);
+}
+body .section-5 .slider .carousel .cell-4::after,
+body .section-5 .slider .carousel .cell-4::before {
+  background-image: url(/images/006.png);
+}
+body .section-5 .slider .carousel .cell-5::after,
+body .section-5 .slider .carousel .cell-5::before {
+  background-image: url(/images/007.png);
+}
+body .section-5 .slider .carousel .flickity-button,
+body .section-5 .slider .carousel .flickity-page-dots {
+  display: none;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
